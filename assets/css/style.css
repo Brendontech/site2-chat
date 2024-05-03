@@ -7,6 +7,9 @@
     min-height: 100vh;
 
 }
+.text-h2-index {
+    font-size: 4rem;
+}
 .intro-text-content, .intro-img {
     display: flex;
     flex-flow: column wrap;
