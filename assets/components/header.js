@@ -136,7 +136,7 @@ class Header extends HTMLElement {
                   <li><a href="index.html">Inicio</a></li>
                   <li><a href="Sobre.html">Sobre</a></li>
                   <li><a href="servicos.html">Serviços</a></li>
-                  <li><a href="#pricing">Localização</a></li>
+                  <li><a href="localização.html">Localização</a></li>
                   <li><a href="contato.html">Contato</a></li>
                 </ul>
               </nav>
