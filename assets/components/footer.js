@@ -140,9 +140,10 @@ footerTemplate.innerHTML = `
                 <div class="footer-contact">
                     <li class="social-row">
                         <h1>Fale conosco</h1>
-                        <p>Contato: 62 992103944</p>
+                        <p>Contato: +55 11 98440-4203
+                        </p>
                         <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=inspireweb23@gmail.com&su=Orçamento para uma entrega&body=Adicione detalhes sobre o pedido">Enviar
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=tavares@wayultimamilha.com.br&su=Orçamento para uma entrega&body=Adicione detalhes sobre o pedido">Enviar
                             e-mail</a>
                     </li>
                 </div>
