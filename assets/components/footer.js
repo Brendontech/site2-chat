@@ -105,10 +105,7 @@ footerTemplate.innerHTML = `
                 width:100%;
             }
             .footer-content {
-                min-height: 30vh;
-            }
-            .grid-footer {
-                padding-bottom: 7rem;
+                flex-grow: 1;
             }
         }
 
