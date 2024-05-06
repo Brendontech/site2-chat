@@ -50,7 +50,7 @@ footerTemplate.innerHTML = `
             justify-content: center;
             align-items: center;
             font-size: 1.2rem;
-            height: 20vh;
+            padding-top: 2rem;
         }
         .footer-icons {
             width: 100vh;
@@ -65,14 +65,11 @@ footerTemplate.innerHTML = `
         .footer-content {
             max-width: 120rem;
             margin: 0 auto;
-            height: 24vh;
         }
         .footer-icons > img {
             width: 6vh;
         }
         footer {
-            height: 100%;
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -106,10 +103,13 @@ footerTemplate.innerHTML = `
             }
             .footer-information > p {
                 width:100%;
-            } 
+            }
             .footer-content {
-                min-height: 50dvh;
-        
+                min-height: 30vh;
+            }
+            .grid-footer {
+                padding-bottom: 7rem;
+            }
         }
 
     </style>
