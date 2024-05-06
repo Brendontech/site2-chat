@@ -197,6 +197,32 @@
 .close-menu {
     display: none;
 }
+
+
+/* localização  */
+.grid-loc {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-loc {
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#container-imagem {
+    width: 100%; /* Definir a largura como 100% */
+    max-width: 600px; /* Largura máxima opcional para limitar o tamanho da imagem */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    display: flex;
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid{
         display: flex;
@@ -259,6 +285,7 @@
     .grid-description {
         padding-top: 0;
     }
+    
 }
 @media (max-width: 320px) {
     .close-menu-label::after {

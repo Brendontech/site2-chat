@@ -22,140 +22,175 @@
 
 <body>
     <header-component></header-component>
-    <section id="localização" class="intro main-bg section">
+    <section id="localização">
         <a href="index.html">
             <img class="image_logo2" src="assets/img/Logotipo-Way-Final.png">
         </a>
     </section>
     <section class="grid-loc">
-        <div>
-            <div>
-                <h1>Regiões atendidas</h1>
+        <div class="text-loc">
+            <h1>Regiões atendidas</h1>
+        </div>
+        <!-- Conteúdo da imagem e controles de zoom -->
+        <div id="container-imagem"
+            style="position: relative; display: inline-block; overflow: hidden; width: 600px; height: 400px;">
+            <img id="imagem-localizacao" src="assets/img/imagem para localização.png" alt="Imagem para localização"
+                style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: grab;">
+            <div style="position: absolute;">
+                <a href="#" id="zoom-out">
+                    <span style="font-size: 20px;">-</span>
+                </a>
+                <a href="#" id="zoom-in">
+                    <span style="font-size: 20px;">+</span>
+                </a>
             </div>
-            <!-- Conteúdo da imagem e controles de zoom -->
-            <div id="container-imagem"
-                style="position: relative; display: inline-block; overflow: hidden; width: 600px; height: 400px;">
-                <img id="imagem-localizacao" src="assets/img/imagem para localização.png" alt="Imagem para localização"
-                    style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: grab;">
-                <div style="position: absolute; top: 10px; right: 10px;">
-                    <a href="#" id="zoom-out">
-                        <span style="font-size: 20px;">-</span>
-                    </a>
-                    <a href="#" id="zoom-in">
-                        <span style="font-size: 20px;">+</span>
-                    </a>
-                </div>
-            </div>
+        </div>
 
-            <script>
-                var isDragging = false;
-                var startX, startY;
-                var startLeft, startTop;
-                var currentScale = 1;
+        <script>
+            var isDragging = false;
+            var startX, startY;
+            var startLeft, startTop;
+            var currentScale = 1;
 
-                document.getElementById("imagem-localizacao").addEventListener("mousedown", function (event) {
-                    event.preventDefault();
-                    isDragging = true;
-                    startX = event.clientX;
-                    startY = event.clientY;
-                    startLeft = parseFloat(this.style.left) || 0;
-                    startTop = parseFloat(this.style.top) || 0;
-                    document.body.style.cursor = "grabbing";
-                });
+            document.getElementById("imagem-localizacao").addEventListener("mousedown", function (event) {
+                event.preventDefault();
+                isDragging = true;
+                startX = event.clientX;
+                startY = event.clientY;
+                startLeft = parseFloat(this.style.left) || 0;
+                startTop = parseFloat(this.style.top) || 0;
+                document.body.style.cursor = "grabbing";
+            });
 
-                document.getElementById("imagem-localizacao").addEventListener("mouseleave", function (event) {
-                    if (!isDragging) {
-                        document.body.style.cursor = "default";
-                    }
-                });
+            document.getElementById("imagem-localizacao").addEventListener("mouseleave", function (event) {
+                if (!isDragging) {
+                    document.body.style.cursor = "default";
+                }
+            });
 
-                document.getElementById("imagem-localizacao").addEventListener("mouseenter", function (event) {
-                    if (!isDragging) {
-                        document.body.style.cursor = "grab";
-                    }
-                });
-
-                document.addEventListener("mouseup", function (event) {
-                    isDragging = false;
+            document.getElementById("imagem-localizacao").addEventListener("mouseenter", function (event) {
+                if (!isDragging) {
                     document.body.style.cursor = "grab";
-                });
+                }
+            });
 
-                document.addEventListener("mousemove", function (event) {
-                    if (isDragging) {
-                        var img = document.getElementById('imagem-localizacao');
-                        var deltaX = event.clientX - startX;
-                        var deltaY = event.clientY - startY;
-                        img.style.left = (startLeft + deltaX) + "px";
-                        img.style.top = (startTop + deltaY) + "px";
-                    }
-                });
+            document.addEventListener("mouseup", function (event) {
+                isDragging = false;
+                document.body.style.cursor = "grab";
+            });
 
-                document.getElementById("zoom-in").addEventListener("click", function (event) {
-                    event.preventDefault();
+            document.addEventListener("mousemove", function (event) {
+                if (isDragging) {
                     var img = document.getElementById('imagem-localizacao');
-                    currentScale *= 1.1;
-                    img.style.width = (img.offsetWidth * 1.1) + "px";
-                    img.style.height = (img.offsetHeight * 1.1) + "px";
-                    img.style.left = parseFloat(img.style.left) * 1.1 + "px";
-                    img.style.top = parseFloat(img.style.top) * 1.1 + "px";
-                });
+                    var deltaX = event.clientX - startX;
+                    var deltaY = event.clientY - startY;
+                    img.style.left = (startLeft + deltaX) + "px";
+                    img.style.top = (startTop + deltaY) + "px";
+                }
+            });
 
-                document.getElementById("zoom-out").addEventListener("click", function (event) {
-                    event.preventDefault();
-                    var img = document.getElementById('imagem-localizacao');
-                    currentScale *= 0.9;
-                    img.style.width = (img.offsetWidth * 0.9) + "px";
-                    img.style.height = (img.offsetHeight * 0.9) + "px";
-                    img.style.left = parseFloat(img.style.left) * 0.9 + "px";
-                    img.style.top = parseFloat(img.style.top) * 0.9 + "px";
-                });
-            </script>
-            <style>
+            document.getElementById("zoom-in").addEventListener("click", function (event) {
+                event.preventDefault();
+                var img = document.getElementById('imagem-localizacao');
+                currentScale *= 1.1;
+                img.style.width = (img.offsetWidth * 1.1) + "px";
+                img.style.height = (img.offsetHeight * 1.1) + "px";
+                img.style.left = parseFloat(img.style.left) * 1.1 + "px";
+                img.style.top = parseFloat(img.style.top) * 1.1 + "px";
+            });
+
+            document.getElementById("zoom-out").addEventListener("click", function (event) {
+                event.preventDefault();
+                var img = document.getElementById('imagem-localizacao');
+                currentScale *= 0.9;
+                img.style.width = (img.offsetWidth * 0.9) + "px";
+                img.style.height = (img.offsetHeight * 0.9) + "px";
+                img.style.left = parseFloat(img.style.left) * 0.9 + "px";
+                img.style.top = parseFloat(img.style.top) * 0.9 + "px";
+            });
+        </script>
+        <style>
+            .grid-loc {
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                /* Centraliza verticalmente */
+            }
+
+            .text-loc {
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+
+            #container-imagem {
+                width: 100%;
+                max-width: 600px;
+                /* Define uma largura máxima opcional */
+                margin: 0 auto;
+                /* Centraliza horizontalmente */
+                display: flex;
+                justify-content: center;
+                /* Centraliza horizontalmente */
+                align-items: center;
+                /* Centraliza verticalmente */
+                overflow: hidden;
+                /* Esconde o conteúdo que estiver além da largura do contêiner */
+                height: 70vh;
+                /* Altura do contêiner para desktop */
+            }
+
+            #imagem-localizacao {
+                width: 100%;
+                height: auto;
+                /* Mantém a proporção da imagem */
+                cursor: grab;
+            }
+
+            #zoom-out,
+            #zoom-in {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 800px) {
+                .grid-loc {
+                    display: flex;
+                    flex-direction: column;
+                    /* Alinha os elementos em colunas */
+                    align-items: center;
+                    /* Centraliza os itens na horizontal */
+                }
+
+                .text-loc {
+                    margin-top: 5vh;
+                    align-items: center;
+                    /* Centraliza os itens na horizontal */
+                    text-align: center;
+                    /* Centraliza o texto */
+                }
+
                 #container-imagem {
-                    position: relative;
-                    display: inline-block;
-                    overflow: hidden;
-                    width: 100%;
+                    max-width: 100%;
+                    /* Ajusta a largura para preencher todo o espaço disponível */
                     height: auto;
-                    max-width: 600px;
-                    margin: 0 auto;
+                    /* Altura automática para dispositivos móveis */
+                    overflow: hidden;
+                    /* Esconde o conteúdo que estiver além da largura do contêiner */
                 }
 
                 #imagem-localizacao {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
                     width: 100%;
+                    /* Garante que a imagem se ajuste à largura do contêiner */
                     height: auto;
-                    cursor: grab;
+                    /* Mantém a proporção da imagem */
                 }
+            }
+        </style>
 
-                #zoom-out,
-                #zoom-in {
-                    font-size: 20px;
-                    margin-right: 10px;
-                }
-
-                @media (max-width: 600px) {
-                    #container-imagem {
-                        max-width: 100%;
-                        height: auto;
-                        overflow: visible;
-                        /* Permite o movimento da imagem em dispositivos móveis */
-                    }
-
-                    #imagem-localizacao {
-                        width: auto;
-                        height: auto;
-                        max-width: none;
-                        /* Remove a largura máxima para permitir que a imagem tenha seu tamanho original */
-                    }
-                }
-            </style>
-
-
-
-        </div>
     </section>
     <footer-component></footer-component>
     <a class="back-to-top" href="#">➤</a>
