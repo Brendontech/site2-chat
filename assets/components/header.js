@@ -87,7 +87,7 @@ class Header extends HTMLElement {
             max-width: 15vh;
           }
           .menu-content{
-            height: 100%;
+            min-height: 65%;
             display: flex;
             justify-content: center;
           }

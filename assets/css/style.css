@@ -8,17 +8,23 @@
 
 }
 .text-h2-index {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+.text-h2-sobre {
+    font-size: 1.4rem;
 }
 .intro-text-content, .intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
-
+.intro-text-content > h1 {
+    font-weight: 200;
+    font-size: 2rem;
+}
 .whatsapp-btn > a {
     padding: 15px;
-    height: 10vh;
+    height: 7vh;
     display: flex;
 }
 .whatsapp-btn > a:hover {
@@ -54,9 +60,10 @@
     min-height: 100vh;
 }
 .grid-main-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
 }
 .grid-description {
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 .grid {
@@ -259,6 +266,9 @@
     }
     .menu-spacing {
         display: none;
+    }
+    .grid-description {
+        padding-top: 0;
     }
 }
 @media (max-width: 320px) {

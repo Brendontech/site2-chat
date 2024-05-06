@@ -107,7 +107,9 @@ footerTemplate.innerHTML = `
             .footer-information > p {
                 width:100%;
             } 
-
+            .footer-content {
+                min-height: 50dvh;
+        
         }
 
     </style>
