@@ -1,13 +1,13 @@
 .main-bg {
-    background-image: linear-gradient(180deg, #0047e0 44%, #f0b800 44%) !important;
+    background-image: linear-gradient(180deg, #ffffff 44%, #74747433 44%) !important;
     background-size: cover;
     background-position: center center;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .white-bg {
     background: var(--white-color);
-    color: var(--primary-color);
+    color: var(--black-color);
 }
 
 .main-content {
@@ -24,7 +24,7 @@
     height: 65px;
 }
 
-body .full-width{
+body.full-width{
     width: 100%;
     flex: 1 1 100%;
 }

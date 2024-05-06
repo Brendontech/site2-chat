@@ -45,7 +45,7 @@ class Header extends HTMLElement {
           text-decoration: none;
           padding: 2rem;
           font-size: 1.8rem;
-          color: var(--primary-color);
+          color: var(--black-color);
           position: relative;
         }
 

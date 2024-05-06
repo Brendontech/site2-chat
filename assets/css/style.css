@@ -84,7 +84,7 @@
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;
-    font-size: 8rem;
+    font-size: 6rem;
     font-style: italic;
     top: -4rem;
     left: -2rem;
@@ -165,18 +165,18 @@
 .form-group button {
     border: 0.5rem solid var(--white-color);
     background: none;
-    color: var(--white-color);
+    color: var(--black-color);
     padding: 1.5rem 2rem;
     font-size: 3rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 .form-group button:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: #0047e0;
+    color: var(--white-color);
 }
 .form-group::placeholder {
-    color: var(--ligth-gray-color);
+    color: var(--black-color);
 }
 .back-to-top{
     position: fixed;
@@ -190,20 +190,9 @@
     align-items: center;
     transform: rotate(-90deg);
 }
-#footer {
-    text-align: center;
-    font-size: 1.8rem;
-}
-#footer p {
-    margin: 0;
-    padding: 3rem;
-}
 
-#footer a{
-    color: var(--primary-color);
-}
 .heart {
-    color: var(--secondary-color);
+    color: var(--black-color);
 }
 .close-menu {
     display: none;
@@ -213,8 +202,8 @@
         display: flex;
         flex-direction: column;
     }
-    H2 {
-        font-size: 4.5rem;
+    h2 {
+        font-size: 3.5rem;
     }
     .gallery-img {
         width: 100%;
