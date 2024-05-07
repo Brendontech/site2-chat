@@ -10,7 +10,7 @@
 .text-index {
     font-size: 3rem;
 }
-.text-h2-index {
+.text-h3-sobre {
     font-size: 2rem;
 }
 .text-h2-sobre {
@@ -86,12 +86,13 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
+    justify-content: space-between;
+    gap: 35vh;
     counter-reset: grid-counter;
 }
 
 .grid h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     padding-left: 5rem;
     padding-bottom: 2rem;
