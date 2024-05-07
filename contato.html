@@ -30,11 +30,7 @@
                 <div class="intro-text-content">
                     <h2>Contato</h2>
                     <p>
-                        Para entrar em contato conosco, estamos disponíveis por telefone (11) 98440-4203 durante o
-                        horário comercial padrão, por e-mail a qualquer momento ou pelo Whatsapp. Nossa equipe dedicada
-                        está pronta para ajudar com suas consultas, fornecer informações adicionais sobre nossos
-                        serviços ou resolver quaisquer problemas que você possa ter. Não hesite em nos contatar, estamos
-                        aqui para ajudar.
+                        Para entrar em contato conosco, estamos disponíveis por telefone (11) 98440-4203 durante o horário comercial padrão, por e-mail a qualquer momento ou pelo WhatsApp. Nossa equipe dedicada está pronta para ajudar com suas consultas, fornecer informações adicionais sobre nossos serviços ou resolver quaisquer problemas que você possa ter. Não hesite em nos contatar, estamos aqui para ajudar.
                     </p>
                     <div class="whatsapp-btn">
                         <a href="https://api.whatsapp.com/send?phone=55011984404203">
@@ -48,42 +44,53 @@
                         alt="Compromisso e pontualidade a cada entrega, entregas rápidas">
                 </div>
             </div>
+            <form action="https://api.staticforms.xyz/submit" method="post">
                 <div class="contact-form">
                     <fieldset class="form-grid">
-                        <legend>Nos envie um e-mail</legend>
-                        <div class="form-group  ">
-                            <label for="first-name">
-                                Primeiro nome
-                            </label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Your name">
-                        </div>
-                        <div class="form-group ">
-                            <label for="last-name">
-                                Sobrenome
-                            </label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
-                        </div>
-                        <div class="form-group full-width">
-                            <label class="full-width" for="email">
-                                E-mail
-                            </label>
-                            <input type="email" name="email" id="email" placeholder="Your e-mail">
-                        </div>
-                        <div class="form-group full-width">
-                            <label for="Message">
-                                Mensagem
-                            </label>
-                            <textarea name="message" id="messsage" cols="30" rows="10"
-                                placeholder="Your message"></textarea>
-                        </div>
-                        <div class="grid-button">
-                            <div class="form-group enviar">
-                                <button type="submit">Enviar mensagem</button>
+                            <input type="hidden" name="accessKey" value="84bb621b-5db3-45c3-95ca-0c4aa116848b">
+                            <input type="hidden" name="redirectTo" value="https://way-ulltima-milha.netlify.app">
+                            <legend>Nos envie um e-mail</legend>
+                            <div class="form-group  ">
+                                <label for="first-name">
+                                    Primeiro nome
+                                </label>
+                                <input type="text" name="name" id="first-name" placeholder="Your name">
                             </div>
-                        </div>
-                    </fieldset>
+                            <div class="form-group ">
+                                <label for="last-name">
+                                    Sobrenome
+                                </label>
+                                <input type="text" name="name" id="last-name" placeholder="Your last name">
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="full-width">
+                                    Telefone
+                                </label>
+                                <input type="tel" name="phone" placeholder="Your phone" >
+                            </div>
+                             <!-- Optional -->
+                            <div class="form-group full-width">
+                                <label class="full-width" for="email">
+                                    E-mail
+                                </label>
+                                <input type="email" name="email" id="email" placeholder="Your e-mail">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="Message">
+                                    Mensagem
+                                </label>
+                                <textarea name="message" id="messsage" cols="30" rows="10"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <div class="grid-button">
+                                <div class="form-group enviar">
+                                    <button type="submit">Enviar mensagem</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
     <footer-component></footer-component>
