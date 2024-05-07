@@ -98,6 +98,13 @@ footerTemplate.innerHTML = `
             width: 100%;
             background-color: #12121212;
         }
+        .logo-anvisa >img {
+            width:15vh
+        }
+        .logo-anvisa {
+            justify-content: center;
+            display: flex;
+        }
         @media (max-width: 800px) {
             .grid-footer {
                 display:flex;
@@ -148,16 +155,21 @@ footerTemplate.innerHTML = `
                             melhor opção em todo o Brasil e região. </p>
                     </li>
                 </div>
+                
                 <div class="footer-contact">
                     <li class="social-row">
                         <h1>Fale conosco</h1>
                         <p>Contato: +55 11 98440-4203
                         </p>
+                        <p>E-mail:  tavares@wayultimamilha.com.br </p>
                         <a
                             href="https://mail.google.com/mail/?view=cm&fs=1&to=tavares@wayultimamilha.com.br&su=Orçamento para uma entrega&body=Adicione detalhes sobre o pedido">Enviar
                             e-mail</a>
                     </li>
                 </div>
+            </div>
+            <div class="logo-anvisa">
+                <img src="assets/img/anvisa.png" >
             </div>
             <div class="footer-content">
                 <p class="programador">
