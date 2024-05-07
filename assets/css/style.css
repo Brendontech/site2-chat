@@ -21,6 +21,7 @@
 }
 .text-funcionamento {
     max-width: 1200px;
+    padding-bottom: 8vh;
 }
 .text-funcionamento > h2 {
     text-align: center;
@@ -305,7 +306,6 @@
     }
     .text-funcionamento {
         width: 80%;
-        padding-bottom: 8vh;
     }
 }
 @media (max-width: 320px) {
