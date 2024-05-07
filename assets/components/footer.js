@@ -55,6 +55,7 @@ footerTemplate.innerHTML = `
         .footer-icons {
             width: 100vh;
             display: flex;
+            align-items: center;
             justify-content: space-between;
         }
         .sociais-footer{
@@ -98,6 +99,16 @@ footerTemplate.innerHTML = `
             background-color: #12121212;
         }
         @media (max-width: 800px) {
+            .grid-footer {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-height: 57vh;
+            }
+            .list-information {
+                max-width: 80%;
+            }
             .social-row > a {
                 font-size: 1.4rem;
             }

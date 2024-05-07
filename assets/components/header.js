@@ -75,7 +75,7 @@ class Header extends HTMLElement {
         @media (max-width: 800px) {
           .menu {
             bottom: 0;
-            width:50%;
+            width:100%;
             text-align: center;            
           }
           .menu-content, .menu-content ul{
@@ -87,7 +87,7 @@ class Header extends HTMLElement {
             max-width: 15vh;
           }
           .menu-content{
-            min-height: 65%;
+            min-height: 70%;
             display: flex;
             justify-content: center;
           }
@@ -99,16 +99,16 @@ class Header extends HTMLElement {
               content: '☰';
               position: fixed;
               z-index: 2;
-              top: 2rem;
-              right: 2rem;
-              background: var(--primary-color);
-              color: var(--white-color);
-              font-size: 3rem;
-              line-height: 3rem;
-              width: 3rem;
-              height: 3rem;
+              top: 1.5rem;
+              right: 1.5rem;
+              border: 1px solid var(--primary-color);
+              color: var(--primary-color);
+              font-size: 2.5rem;
+              line-height: 2.5rem;
+              width: 2.5rem;
+              height: 2.5rem;
               text-align: center;
-              padding: 0.5rem;
+              padding: 0.8rem;
               cursor: pointer;
           }
           .close-menu:checked~.menu {
@@ -128,7 +128,7 @@ class Header extends HTMLElement {
       <aside class="menu">
           <div class="main-content menu-content">
               <h1 onclick="getElementById('close-menu').checked = false;">
-                  <a href="#home"><img class="image_logo" src="assets/img/Logotipo-Way-Final.png" alt=""></a>
+                  <a href="index.html"><img class="image_logo" src="assets/img/Logotipo-Way-Final.png" alt=""></a>
               </h1>
   
               <nav>

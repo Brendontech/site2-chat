@@ -23,7 +23,7 @@
     font-size: 2rem;
 }
 .whatsapp-btn > a {
-    padding: 15px;
+    padding: 7px;
     height: 7vh;
     display: flex;
 }
@@ -167,10 +167,11 @@
     background: none;
     color: var(--black-color);
     padding: 1.5rem 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+    transition: all 450ms ease-in;
 }
+
 .form-group button:hover {
     background: #0047e0;
     color: var(--white-color);
@@ -253,9 +254,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    .menu-content{
-        height:100vh;
-    }
+
     .menu{
         display: none;
     }
@@ -281,6 +280,9 @@
     }
     .close-menu:checked~.close-menu-label::after {
         content: '×';
+    }
+    .enviar {
+        text-align: center;
     }
     .menu-spacing {
         display: none;
