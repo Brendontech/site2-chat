@@ -200,29 +200,32 @@
 
 
 /* localização  */
-.grid-loc {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 .text-loc {
     justify-content: center;
-    width: 80%;
-    height: 100vh;
     display: flex;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
-}
-
-#container-imagem {
-    width: 100%; /* Definir a largura como 100% */
-    max-width: 600px; /* Largura máxima opcional para limitar o tamanho da imagem */
-    margin: 0 auto; /* Centralizar horizontalmente */
+    min-height: 120vh;
     display: flex;
-    justify-content: center; /* Alinhar horizontalmente ao centro */
-    align-items: center; /* Alinhar verticalmente ao centro */
+    align-items: flex-end;
 }
-
+.text-loc > h2 {
+    font-size: 1.6rem;
+}
+.red-circle {
+    width: 30px; /* Tamanho da bolinha */
+    height: 30px; /* Tamanho da bolinha */
+    background-color: red; /* Cor vermelha */
+    border-radius: 50%; /* Transforma em uma bolinha redonda */
+}
+.yellow-circle {
+    width: 30px; /* Tamanho da bolinha */
+    height: 30px; /* Tamanho da bolinha */
+    background-color: yellow; /* Cor vermelha */
+    border-radius: 50%; /* Transforma em uma bolinha redonda */
+}
 @media (max-width: 800px) {
     .intro-content, .grid{
         display: flex;

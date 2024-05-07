@@ -30,6 +30,28 @@
     <section class="grid-loc">
         <div class="text-loc">
             <h1>Regiões atendidas</h1>
+            <h2>Polo e Região Atendida</h2>
+            <div class="red-circle"></div>
+            <p>
+                Unidade Hortolandia <br>
+                CAMPINAS
+            </p>
+            <p>
+                Unidade Votorantim <br>
+                SOROCABA
+            </p>
+            <p>
+                Unidade Barueri <br>
+                SÃO PAULO
+            </p>
+            <p>
+                Unidade Praia Grande <br>
+                BAIXADA SANTISTA e
+                VALE DA RIBEIRA
+            </p>
+            <div class="yellow-circle"></div>
+            <p>Linhas Diárias São Paulo x Ribeirão Preto x São Paulo
+            </p>
         </div>
         <!-- Conteúdo da imagem e controles de zoom -->
         <div id="container-imagem"
@@ -111,17 +133,13 @@
         </script>
         <style>
             .grid-loc {
-                height: 100vh;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: center;
                 /* Centraliza verticalmente */
             }
-
             .text-loc {
                 justify-content: center;
-                width: 80%;
-                height: 100vh;
                 display: flex;
                 align-items: center;
             }
@@ -139,8 +157,6 @@
                 /* Centraliza verticalmente */
                 overflow: hidden;
                 /* Esconde o conteúdo que estiver além da largura do contêiner */
-                height: 70vh;
-                /* Altura do contêiner para desktop */
             }
 
             #imagem-localizacao {
