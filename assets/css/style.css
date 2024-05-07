@@ -7,6 +7,9 @@
     min-height: 100vh;
 
 }
+.text-index {
+    font-size: 3rem;
+}
 .text-h2-index {
     font-size: 2rem;
 }
