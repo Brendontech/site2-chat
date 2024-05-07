@@ -24,6 +24,7 @@ footerTemplate.innerHTML = `
             display: flex;
             justify-content: center;
             font-size: 1.4rem;
+            border:none
         }
         .social-row > a:hover{
             color: rgb(43, 206, 22);
@@ -70,6 +71,10 @@ footerTemplate.innerHTML = `
         .footer-icons > img {
             width: 6vh;
         }
+        .footer-icons > a:hover {
+            padding-bottom: 5px;
+            box-shadow: inset 0 -2px 0 0 #333;
+        }
         footer {
             display: flex;
             flex-direction: column;
@@ -86,10 +91,6 @@ footerTemplate.innerHTML = `
             margin: 0 15px;
             color: inherit;
             text-decoration: none;
-        }
-        a:hover {
-            padding-bottom: 5px;
-            box-shadow: inset 0 -2px 0 0 #333;
         }
         .social-row li a {
             margin: 0 15px;
@@ -133,7 +134,7 @@ footerTemplate.innerHTML = `
 
             <div class="sociais-footer">
                 <div class="footer-icons">
-                    <a href="">
+                    <a href="https://api.whatsapp.com/send?phone=55011984404203">
                         <img src="assets/img/icon-whatsapp.webp">
                     </a>
                     <a href="">
