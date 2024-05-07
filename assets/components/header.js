@@ -64,8 +64,7 @@ class Header extends HTMLElement {
           left: 25%;
         }
         .image_logo {
-          padding-left: 22px;
-          max-width: 28vh;
+          max-width: 22vh;
         }
         .main-content {
           max-width: 120rem;
@@ -128,9 +127,11 @@ class Header extends HTMLElement {
       <label class="close-menu-label" for="close-menu" title="Close menu"></label>
       <aside class="menu">
           <div class="main-content menu-content">
-              <h1 onclick="getElementById('close-menu').checked = false;">
-              <a href="index.html"><img class="image_logo" src="assets/img/Logotipo-Way-Final.png" alt=""></a>
-              </h1>
+          <div class= "logo-padding">
+          <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="index.html"><img class="image_logo" src="assets/img/Logotipo-Way-Final.png" alt=""></a>
+          </h1>
+          </div>
   
               <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
