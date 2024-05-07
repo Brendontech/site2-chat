@@ -151,9 +151,9 @@ footerTemplate.innerHTML = `
             <div class="grid-footer main-content">
                 <div class="list-information">
                     <li class="footer-information">
-                        <h1>Way ultima milha</h1>
-                        <p>Em busca da excelência no transporte de cargas, a nossa transportadora se destaca como a
-                            melhor opção em todo o Brasil e região. </p>
+                        <h1>Way Última Milha</h1>
+                        <p>Em busca da excelência no transporte de cargas em São Paulo, a nossa transportadora se destaca como a
+                        melhor opção. </p>
                     </li>
                 </div>
                 

@@ -242,7 +242,7 @@ textarea#messsage {
 }
 
 .heart {
-    color: var(--black-color);
+    color: crimson;
 }
 .close-menu {
     display: none;
