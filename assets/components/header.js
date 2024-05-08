@@ -72,6 +72,11 @@ class Header extends HTMLElement {
           height: 5vh;
           padding: var(--gap);
         }
+        @media (hover: none) {
+          a {
+              -webkit-tap-highlight-color: transparent; /* Define a cor de destaque ao tocar como transparente */
+          }
+        }
         @media (max-width: 800px) {
           .menu {
             bottom: 0;
