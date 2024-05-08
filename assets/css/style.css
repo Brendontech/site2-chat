@@ -86,10 +86,9 @@
     padding-bottom: 5rem;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: space-between;
-    gap: 35vh;
+    gap: var(--gap);
     counter-reset: grid-counter;
 }
 
@@ -295,7 +294,7 @@ textarea#messsage {
         width: 100%;
     }
     .grid-one-content {
-        display: block;
+        align-items: center;
     }
     .menu {
         bottom: 0;
@@ -343,7 +342,7 @@ textarea#messsage {
         display: none;
     }
     .grid {
-        gap: var(--gap);
+        width: 80%;
     }
     .grid-description {
         padding-top: 0;
