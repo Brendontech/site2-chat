@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Way Última Milha Contato</title>
-    <meta name="description" content="Soluções de Entregas Rápidas e Confiáveis para o Setor de Saúde em São Paulo. Bem-vindo à Way Última Milha, onde a excelência em logística se encontra com a dedicação ao setor de saúde. Localizados estrategicamente em São Paulo">
-    <meta name="keywords" content="entregas, Eficiência e Agilidade, Tecnologia e Profissionalismo, Way última milha, transportadora, transporte, São Paulo, Entregas Rápidas, Saúde">
+    <meta name="description"
+        content="Soluções de Entregas Rápidas e Confiáveis para o Setor de Saúde em São Paulo. Bem-vindo à Way Última Milha, onde a excelência em logística se encontra com a dedicação ao setor de saúde. Localizados estrategicamente em São Paulo">
+    <meta name="keywords"
+        content="entregas, Eficiência e Agilidade, Tecnologia e Profissionalismo, Way última milha, transportadora, transporte, São Paulo, Entregas Rápidas, Saúde">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +35,11 @@
                 <div class="intro-text-content">
                     <h2 class="text-index">Contato</h2>
                     <p>
-                        Para entrar em contato conosco, estamos disponíveis por telefone (11) 98440-4203 durante o horário comercial padrão, por e-mail a qualquer momento ou pelo WhatsApp. Nossa equipe dedicada está pronta para ajudar com suas consultas, fornecer informações adicionais sobre nossos serviços ou resolver quaisquer problemas que você possa ter. Não hesite em nos contatar, estamos aqui para ajudar.
+                        Para entrar em contato conosco, estamos disponíveis por telefone (11) 98440-4203 durante o
+                        horário comercial padrão, por e-mail a qualquer momento ou pelo WhatsApp. Nossa equipe dedicada
+                        está pronta para ajudar com suas consultas, fornecer informações adicionais sobre nossos
+                        serviços ou resolver quaisquer problemas que você possa ter. Não hesite em nos contatar, estamos
+                        aqui para ajudar.
                     </p>
                     <div class="whatsapp-btn">
                         <a href="https://api.whatsapp.com/send?phone=55011984404203">
@@ -47,54 +53,122 @@
                         alt="Compromisso e pontualidade a cada entrega, entregas rápidas">
                 </div>
             </div>
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
                 <div class="contact-form">
                     <fieldset class="form-grid">
-                            <input type="hidden" name="accessKey" value="84bb621b-5db3-45c3-95ca-0c4aa116848b">
-                            <input type="hidden" name="redirectTo" value="https://way-ulltima-milha.netlify.app">
-                            <legend>Nos envie um e-mail</legend>
-                            <div class="form-group  ">
-                                <label for="first-name">
-                                    Primeiro nome
-                                </label>
-                                <input type="text" name="name" id="first-name" placeholder="Your name">
+                        <input type="hidden" name="redirectTo" value="https://way-ulltima-milha.netlify.app">
+                        <input type="hidden" name="accessKey" value="84bb621b-5db3-45c3-95ca-0c4aa116848b">
+                        <legend>Nos envie um e-mail</legend>
+                        <div class="form-group  ">
+                            <label for="first-name">
+                                Primeiro nome
+                            </label>
+                            <input type="text" name="name" id="first-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="last-name">
+                                Sobrenome
+                            </label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Your last name" required>
+                            <!-- Corrigido o ID para last-name -->
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="full-width">
+                                Telefone
+                            </label>
+                            <input type="tel" name="phone" placeholder="Your phone" required>
+                        </div>
+                        <!-- Optional -->
+                        <div class="form-group full-width">
+                            <label class="full-width" for="email">
+                                E-mail
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Your e-mail" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">
+                                Mensagem
+                            </label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                            <!-- Corrigido o ID para message -->
+                        </div>
+                        <div class="grid-button">
+                            <div class="form-group enviar">
+                                <button type="submit">Enviar mensagem</button>
                             </div>
-                            <div class="form-group ">
-                                <label for="last-name">
-                                    Sobrenome
-                                </label>
-                                <input type="text" name="name" id="last-name" placeholder="Your last name">
-                            </div>
-                            <div class="form-group full-width">
-                                <label class="full-width">
-                                    Telefone
-                                </label>
-                                <input type="tel" name="phone" placeholder="Your phone" >
-                            </div>
-                             <!-- Optional -->
-                            <div class="form-group full-width">
-                                <label class="full-width" for="email">
-                                    E-mail
-                                </label>
-                                <input type="email" name="email" id="email" placeholder="Your e-mail">
-                            </div>
-                            <div class="form-group full-width">
-                                <label for="Message">
-                                    Mensagem
-                                </label>
-                                <textarea name="message" id="messsage" cols="30" rows="10"
-                                    placeholder="Your message"></textarea>
-                            </div>
-                            <div class="grid-button">
-                                <div class="form-group enviar">
-                                    <button type="submit">Enviar mensagem</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
                 </div>
             </form>
-        </section>
+            
+            <style>
+                /* Estilo personalizado para o balão de alerta */
+                .custom-alert {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #000000a8;
+                    color: #ffffff;
+                    padding: 15px;
+                    border: 1px solid #868383;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(15, 85, 30, 0.89);
+                    max-width: 300px;
+                    z-index: 9999;
+                }
+            </style>
+            
+            <script>
+                // Função para lidar com o sucesso ou falha do envio do formulário (opcional)
+                function handleFormSubmission(response) {
+                    if (response.success) {
+                        // Se o envio for bem-sucedido, exibe um alerta personalizado
+                        var alertDiv = document.createElement("div");
+                        alertDiv.className = "custom-alert";
+                        alertDiv.textContent = "Sua mensagem foi enviada com sucesso!";
+                        document.body.appendChild(alertDiv);
+            
+                        // Remove o alerta após alguns segundos (opcional)
+                        setTimeout(function () {
+                            alertDiv.parentNode.removeChild(alertDiv);
+                        }, 3000); // Remove após 3 segundos
+                    } else {
+                        // Se houver um erro no envio, exibe um alerta de erro
+                        var alertDiv = document.createElement("div");
+                        alertDiv.className = "custom-alert";
+                        alertDiv.style.backgroundColor = "#ffcccc"; // Cor de fundo vermelha
+                        alertDiv.textContent = "Erro ao enviar mensagem. Por favor, tente novamente mais tarde.";
+                        document.body.appendChild(alertDiv);
+            
+                        // Remove o alerta após alguns segundos (opcional)
+                        setTimeout(function () {
+                            alertDiv.parentNode.removeChild(alertDiv);
+                        }, 5000); // Remove após 5 segundos
+                    }
+                }
+            
+                // Evento de carregamento do DOM
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.getElementById("contact-form").addEventListener("submit", function (event) {
+                        event.preventDefault(); // Previne o envio padrão do formulário
+            
+                        // Seu código personalizado aqui
+                        // Cria um elemento de alerta
+                        var alertDiv = document.createElement("div");
+                        alertDiv.className = "custom-alert";
+                        alertDiv.textContent = "Sua mensagem foi enviada com sucesso!";
+                        document.body.appendChild(alertDiv);
+            
+                        // Remove o alerta após alguns segundos e envia o formulário
+                        setTimeout(function () {
+                            alertDiv.parentNode.removeChild(alertDiv);
+                            document.getElementById("contact-form").submit();
+                        }, 3000); // 3000 milissegundos = 3 segundos
+                    });
+                });
+            </script>
+            
     </main>
     <footer-component></footer-component>
     <a class="back-to-top" href="#">➤</a>

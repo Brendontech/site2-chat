@@ -164,7 +164,7 @@ footerTemplate.innerHTML = `
                         </p>
                         <p>E-mail:  tavares@wayultimamilha.com.br </p>
                         <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=tavares@wayultimamilha.com.br&su=Orçamento para uma entrega&body=Adicione detalhes sobre o pedido">Enviar
+                            href="contato.html">Enviar
                             e-mail</a>
                     </li>
                 </div>
