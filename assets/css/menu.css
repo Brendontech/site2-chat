@@ -5,7 +5,9 @@ a:hover {
 .image_logo2 {
     display: none;
 }
-
+.box-mobile {
+    box-shadow: 0px 0px 5px 5px #23222152;
+}
 @media (max-width: 800px) {
     .image_logo2 {
         animation: moveimage_logo2 10s ease-in-out;

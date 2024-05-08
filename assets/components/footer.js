@@ -96,6 +96,7 @@ footerTemplate.innerHTML = `
             margin: 0 15px;
         }
         .style-footer {
+            box-shadow: 0px 0px 5px 5px #23222152;
             width: 100%;
             background-color: #12121212;
         }

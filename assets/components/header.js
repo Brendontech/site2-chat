@@ -69,6 +69,7 @@ class Header extends HTMLElement {
         .main-content {
           max-width: 120rem;
           margin: 0 auto;
+          box-shadow: 0px 0px 5px 5px #23222170;
           height: 5vh;
           padding: var(--gap);
         }
@@ -104,8 +105,8 @@ class Header extends HTMLElement {
               content: '☰';
               position: fixed;
               z-index: 2;
-              top: 1.5rem;
-              right: 1.5rem;
+              top: 0.8rem;
+              right: 1rem;
               border: 1px solid var(--primary-color);
               color: var(--primary-color);
               font-size: 2.5rem;
