@@ -112,7 +112,7 @@ footerTemplate.innerHTML = `
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                min-height: 57vh;
+                min-height: 40vh;
             }
             .list-information {
                 max-width: 80%;
