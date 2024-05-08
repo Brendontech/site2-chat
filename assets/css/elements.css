@@ -36,6 +36,11 @@ h4{
 h5{
     font-size: 3.5rem;
 }
+a:focus,
+a:active {
+    outline: none; /* Remove o contorno padrão do link */
+    background-color: transparent; /* Define o fundo como transparente */
+}
 a{
     text-decoration: none;
 }

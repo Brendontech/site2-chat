@@ -135,7 +135,7 @@ class Header extends HTMLElement {
   
               <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="index.html">Início</a></li>
                   <li><a href="Sobre.html">Sobre</a></li>
                   <li><a href="servicos.html">Serviços</a></li>
                   <li><a href="localização.html">Localização</a></li>
