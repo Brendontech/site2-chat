@@ -41,6 +41,11 @@ a:active {
     outline: none; /* Remove o contorno padrão do link */
     background-color: transparent; /* Define o fundo como transparente */
 }
+@media (hover: none) {
+    a {
+        -webkit-tap-highlight-color: transparent; /* Define a cor de destaque ao tocar como transparente */
+    }
+}
 a{
     text-decoration: none;
 }
