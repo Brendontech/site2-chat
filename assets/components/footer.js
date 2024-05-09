@@ -128,9 +128,6 @@ footerTemplate.innerHTML = `
             .logo-anvisa >img {
                 width:10vh
             }
-            .style-footer {
-                height: 100vh;
-            }
         }
 
     </style>
