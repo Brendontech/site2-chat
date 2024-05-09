@@ -105,7 +105,7 @@ class Header extends HTMLElement {
               content: '☰';
               position: fixed;
               z-index: 2;
-              top: 0.8rem;
+              top: 1rem;
               right: 1rem;
               border: 1px solid var(--primary-color);
               color: var(--primary-color);
