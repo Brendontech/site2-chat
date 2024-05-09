@@ -230,6 +230,7 @@ textarea#messsage {
 }
 
 .back-to-top{
+    color: #000000;
     position: fixed;
     bottom: 2rem;
     right: 2rem;

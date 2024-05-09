@@ -51,7 +51,6 @@ footerTemplate.innerHTML = `
             justify-content: center;
             align-items: center;
             font-size: 1.2rem;
-            padding-top: 2rem;
         }
         .footer-icons {
             width: 100vh;
@@ -113,7 +112,6 @@ footerTemplate.innerHTML = `
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                min-height: 40vh;
             }
             .list-information {
                 max-width: 80%;
@@ -126,6 +124,12 @@ footerTemplate.innerHTML = `
             }
             .footer-content {
                 flex-grow: 1;
+            }
+            .logo-anvisa >img {
+                width:10vh
+            }
+            .style-footer {
+                height: 100vh;
             }
         }
 
