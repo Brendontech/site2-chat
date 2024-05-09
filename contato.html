@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Way Última Milha Contato</title>
+    <title>Contato</title>
     <meta name="description"
         content="Soluções de Entregas Rápidas e Confiáveis para o Setor de Saúde em São Paulo. Bem-vindo à Way Última Milha, onde a excelência em logística se encontra com a dedicação ao setor de saúde. Localizados estrategicamente em São Paulo">
     <meta name="keywords"
@@ -103,77 +103,9 @@
                         </div>
                     </fieldset>
                 </div>
-            </form>
-            
-            <style>
-                /* Estilo personalizado para o balão de alerta */
-                .custom-alert {
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: #000000a8;
-                    color: #ffffff;
-                    padding: 15px;
-                    border: 1px solid #868383;
-                    border-radius: 5px;
-                    box-shadow: 0 0 10px rgba(15, 85, 30, 0.89);
-                    max-width: 300px;
-                    z-index: 9999;
-                }
-            </style>
-            
-            <script>
-                // Função para lidar com o sucesso ou falha do envio do formulário (opcional)
-                function handleFormSubmission(response) {
-                    if (response.success) {
-                        // Se o envio for bem-sucedido, exibe um alerta personalizado
-                        var alertDiv = document.createElement("div");
-                        alertDiv.className = "custom-alert";
-                        alertDiv.textContent = "Sua mensagem foi enviada com sucesso!";
-                        document.body.appendChild(alertDiv);
-            
-                        // Remove o alerta após alguns segundos (opcional)
-                        setTimeout(function () {
-                            alertDiv.parentNode.removeChild(alertDiv);
-                        }, 3000); // Remove após 3 segundos
-                    } else {
-                        // Se houver um erro no envio, exibe um alerta de erro
-                        var alertDiv = document.createElement("div");
-                        alertDiv.className = "custom-alert";
-                        alertDiv.style.backgroundColor = "#ffcccc"; // Cor de fundo vermelha
-                        alertDiv.textContent = "Erro ao enviar mensagem. Por favor, tente novamente mais tarde.";
-                        document.body.appendChild(alertDiv);
-            
-                        // Remove o alerta após alguns segundos (opcional)
-                        setTimeout(function () {
-                            alertDiv.parentNode.removeChild(alertDiv);
-                        }, 5000); // Remove após 5 segundos
-                    }
-                }
-            
-                // Evento de carregamento do DOM
-                document.addEventListener("DOMContentLoaded", function () {
-                    document.getElementById("contact-form").addEventListener("submit", function (event) {
-                        event.preventDefault(); // Previne o envio padrão do formulário
-            
-                        // Seu código personalizado aqui
-                        // Cria um elemento de alerta
-                        var alertDiv = document.createElement("div");
-                        alertDiv.className = "custom-alert";
-                        alertDiv.textContent = "Sua mensagem foi enviada com sucesso!";
-                        document.body.appendChild(alertDiv);
-            
-                        // Remove o alerta após alguns segundos e envia o formulário
-                        setTimeout(function () {
-                            alertDiv.parentNode.removeChild(alertDiv);
-                            document.getElementById("contact-form").submit();
-                        }, 3000); // 3000 milissegundos = 3 segundos
-                    });
-                });
-            </script>
-            
+            </form>                     
     </main>
     <footer-component></footer-component>
     <a class="back-to-top" href="#">➤</a>
+    <script src="assets/js/scipt.js"></script>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Way Última Milha localização</title>
+    <title>localização</title>
     <meta name="description"
         content="Soluções de Entregas Rápidas e Confiáveis para o Setor de Saúde em São Paulo. Bem-vindo à Way Última Milha, onde a excelência em logística se encontra com a dedicação ao setor de saúde. Localizados estrategicamente em São Paulo">
     <meta name="keywords"
@@ -19,203 +19,64 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/variaveis.css">
+    <script type="text" src="assets/js/localização.js"></script>
     <script type="module" src="assets/components/header.js"></script>
     <script type="module" src="assets/components/footer.js"></script>
-    <script type="text" src="assets/js/scipt.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header-component></header-component>
-    <div class="box-mobile">
-        <a href="index.html">
-            <img class="image_logo2" src="assets/img/Logotipo-Way-Final.png">
-        </a>
-    </div>
-    <section class="grid-loc">
-        <div class="text-loc">
-            <h1 class="text-index">Regiões atendidas</h1>
-            <h2>Polo e Região Atendida</h2>
-            <div class="red-circle"></div>
-            <p>
-                Unidade Hortolandia <br>
-                CAMPINAS
-            </p>
-            <p>
-                Unidade Votorantim <br>
-                SOROCABA
-            </p>
-            <p>
-                Unidade Barueri <br>
-                SÃO PAULO
-            </p>
-            <p>
-                Unidade Praia Grande <br>
-                BAIXADA SANTISTA e
-                VALE DA RIBEIRA
-            </p>
-            <div class="yellow-circle"></div>
-            <p>Linhas Diárias São Paulo x Ribeirão Preto x São Paulo
-            </p>
+    <main>
+
+        <div class="box-mobile">
+            <a href="index.html">
+                <img class="image_logo2" src="assets/img/Logotipo-Way-Final.png">
+            </a>
         </div>
-        <!-- Conteúdo da imagem e controles de zoom -->
-        <div id="container-imagem"
-            style="position: relative; display: inline-block; overflow: hidden; width: 600px; height: 400px;">
-            <img id="imagem-localizacao" src="assets/img/imagem para localização.png" alt="Imagem para localização"
-                style="position: absolute; left: 0; top: 0; width: 100%; cursor: grab;">
-            <div style="position: absolute;">
-                <a href="#" id="zoom-out">
-                    <span style="font-size: 20px;">-</span>
-                </a>
-                <a href="#" id="zoom-in">
-                    <span style="font-size: 20px;">+</span>
-                </a>
+        <section class="grid-loc">
+            <div class="text-loc">
+                <h1 class="text-index">Regiões atendidas</h1>
+                <h2>Polo e Região Atendida</h2>
+                <div class="red-circle"></div>
+                <p>
+                    Unidade Hortolandia <br>
+                    CAMPINAS
+                </p>
+                <p>
+                    Unidade Votorantim <br>
+                    SOROCABA
+                </p>
+                <p>
+                    Unidade Barueri <br>
+                    SÃO PAULO
+                </p>
+                <p>
+                    Unidade Praia Grande <br>
+                    BAIXADA SANTISTA e
+                    VALE DA RIBEIRA
+                </p>
+                <div class="yellow-circle"></div>
+                <p>Linhas Diárias São Paulo x Ribeirão Preto x São Paulo
+                </p>
             </div>
-        </div>
-
-        <script>
-            var isDragging = false;
-            var startX, startY;
-            var startLeft, startTop;
-            var currentScale = 1;
-
-            document.getElementById("imagem-localizacao").addEventListener("mousedown", function (event) {
-                event.preventDefault();
-                isDragging = true;
-                startX = event.clientX;
-                startY = event.clientY;
-                startLeft = parseFloat(this.style.left) || 0;
-                startTop = parseFloat(this.style.top) || 0;
-                document.body.style.cursor = "grabbing";
-            });
-
-            document.getElementById("imagem-localizacao").addEventListener("mouseleave", function (event) {
-                if (!isDragging) {
-                    document.body.style.cursor = "default";
-                }
-            });
-
-            document.getElementById("imagem-localizacao").addEventListener("mouseenter", function (event) {
-                if (!isDragging) {
-                    document.body.style.cursor = "grab";
-                }
-            });
-
-            document.addEventListener("mouseup", function (event) {
-                isDragging = false;
-                document.body.style.cursor = "grab";
-            });
-
-            document.addEventListener("mousemove", function (event) {
-                if (isDragging) {
-                    var img = document.getElementById('imagem-localizacao');
-                    var deltaX = event.clientX - startX;
-                    var deltaY = event.clientY - startY;
-                    img.style.left = (startLeft + deltaX) + "px";
-                    img.style.top = (startTop + deltaY) + "px";
-                }
-            });
-
-            document.getElementById("zoom-in").addEventListener("click", function (event) {
-                event.preventDefault();
-                var img = document.getElementById('imagem-localizacao');
-                currentScale *= 1.1;
-                img.style.width = (img.offsetWidth * 1.1) + "px";
-                img.style.height = (img.offsetHeight * 1.1) + "px";
-                img.style.left = parseFloat(img.style.left) * 1.1 + "px";
-                img.style.top = parseFloat(img.style.top) * 1.1 + "px";
-            });
-
-            document.getElementById("zoom-out").addEventListener("click", function (event) {
-                event.preventDefault();
-                var img = document.getElementById('imagem-localizacao');
-                currentScale *= 0.9;
-                img.style.width = (img.offsetWidth * 0.9) + "px";
-                img.style.height = (img.offsetHeight * 0.9) + "px";
-                img.style.left = parseFloat(img.style.left) * 0.9 + "px";
-                img.style.top = parseFloat(img.style.top) * 0.9 + "px";
-            });
-        </script>
-        <style>
-            .grid-loc {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                align-items: center;
-                /* Centraliza verticalmente */
-            }
-
-            .text-loc {
-                justify-content: center;
-                display: flex;
-                align-items: center;
-            }
-
-            #container-imagem {
-                width: 100%;
-                max-width: 600px;
-                /* Define uma largura máxima opcional */
-                margin: 0 auto;
-                /* Centraliza horizontalmente */
-                display: flex;
-                justify-content: center;
-                /* Centraliza horizontalmente */
-                align-items: center;
-                /* Centraliza verticalmente */
-                overflow: hidden;
-                /* Esconde o conteúdo que estiver além da largura do contêiner */
-            }
-
-            #imagem-localizacao {
-                width: 100%;
-                height: auto;
-                /* Mantém a proporção da imagem */
-                cursor: grab;
-            }
-
-            #zoom-out,
-            #zoom-in {
-                font-size: 20px;
-                margin-right: 10px;
-            }
-
-            @media (max-width: 800px) {
-                .grid-loc {
-                    display: flex;
-                    flex-direction: column;
-                    /* Alinha os elementos em colunas */
-                    align-items: center;
-                    /* Centraliza os itens na horizontal */
-                }
-
-                .text-loc {
-                    height: 60vh;
-                    margin-top: 10vh;
-                    margin-bottom: 6vh;
-                    align-items: center;
-                    /* Centraliza os itens na horizontal */
-                    text-align: center;
-                    /* Centraliza o texto */
-                }
-
-                #container-imagem {
-                    max-width: 100%;
-                    /* Ajusta a largura para preencher todo o espaço disponível */
-                    height: auto;
-                    /* Altura automática para dispositivos móveis */
-                    overflow: hidden;
-                    /* Esconde o conteúdo que estiver além da largura do contêiner */
-                }
-
-                #imagem-localizacao {
-                    width: 100%;
-                    /* Garante que a imagem se ajuste à largura do contêiner */
-                    height: auto;
-                    /* Mantém a proporção da imagem */
-                }
-            }
-        </style>
-
-    </section>
+            <!-- Conteúdo da imagem e controles de zoom -->
+            <div id="container-imagem"
+                style="position: relative; display: inline-block; overflow: hidden; width: 600px; height: 400px;">
+                <img id="imagem-localizacao" src="assets/img/imagem para localização.png" alt="Imagem para localização"
+                    style="position: absolute; left: 0; top: 0; width: 100%; cursor: grab;">
+                <div class="button-zoom" style="position: absolute;">
+                    <a href="#" id="zoom-out">
+                        <span style="font-size: 25px;">-</span>
+                    </a>
+                    <a href="#" id="zoom-in">
+                        <span style="font-size: 25px;">+</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer-component></footer-component>
     <a class="back-to-top" href="#">➤</a>
+    <script src="assets/js/localização.js"></script>
 </body>

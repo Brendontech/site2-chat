@@ -142,6 +142,9 @@
 .grid-text-img > h1 {
     font-size: 1.8rem;
 }
+
+/* Contato */
+
 .contact-form {
     padding-bottom: 10vh;
     display: flex;
@@ -207,6 +210,21 @@ textarea#messsage {
 .form-group textarea:focus {
     box-shadow: 0px 0px 5px 5px #c48e2bde;
 }
+ /* Estilo personalizado para o balão de alerta */
+ .custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000a8;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #868383;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(15, 85, 30, 0.89);
+    max-width: 300px;
+    z-index: 9999;
+}
 .grid-button {
     display: flex;
     align-items: flex-end;
@@ -256,6 +274,13 @@ textarea#messsage {
 
 /* localização  */
 
+
+.grid-loc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* Centraliza verticalmente */
+}
 .text-loc {
     justify-content: center;
     display: flex;
@@ -264,10 +289,37 @@ textarea#messsage {
     align-items: center;
     height: 120vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .text-loc > h2 {
     font-size: 1.6rem;
+}
+#container-imagem {
+    width: 100%;
+    max-width: 600px;
+    /* Define uma largura máxima opcional */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    overflow: hidden;
+    /* Esconde o conteúdo que estiver além da largura do contêiner */
+}
+
+#imagem-localizacao {
+    width: 100%;
+    height: auto;
+    /* Mantém a proporção da imagem */
+    cursor: grab;
+}
+
+#zoom-out,
+#zoom-in {
+    font-size: 20px;
+    margin-right: 10px;
 }
 .red-circle {
     width: 30px; /* Tamanho da bolinha */
@@ -281,6 +333,7 @@ textarea#messsage {
     background-color: yellow; /* Cor vermelha */
     border-radius: 50%; /* Transforma em uma bolinha redonda */
 }
+
 @media (max-width: 800px) {
     .intro-content, .grid{
         display: flex;
@@ -300,41 +353,8 @@ textarea#messsage {
     .grid-one-content {
         align-items: center;
     }
-    .menu {
-        bottom: 0;
-        text-align: center;
-    }
-    .menu-content, .menu-content ul{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .close-menu-label::after {
-        content: '☰';
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        background: var(--primary-color);
-        color: var(--white-color);
-        font-size: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        padding: 0.5rem;
-        cursor: pointer;
-    }
-    .close-menu:checked~.menu {
-        display: block;
-    }
-    .close-menu:checked~.close-menu-label::after {
-        content: '×';
-    }
+    
+    /* Contato */
     .contact-form {
         display: flex;
         justify-content: center;
@@ -342,23 +362,43 @@ textarea#messsage {
     .enviar {
         text-align: center;
     }
-    .menu-spacing {
-        display: none;
-    }
     .grid {
         width: 80%;
     }
     .grid-description {
         padding-top: 0;
     }
-    .text-funcionamento {
-        width: 80%;
-    }
-    .text-index {
-        padding: 0;
-    }
     .grid-button{
         width: 100%;
+    }
+
+    /* Localização */
+
+    .grid-loc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-zoom {
+        display: none;
+    }
+    .text-loc {
+        height: 80vh;
+        margin-top: 10vh;
+        margin-bottom: 6vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    #container-imagem {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #imagem-localizacao {
+        width: 100%;
+        height: auto;
     }
 }
 @media (max-width: 320px) {
