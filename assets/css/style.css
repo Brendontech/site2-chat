@@ -207,7 +207,10 @@ textarea#messsage {
 .form-group textarea:focus {
     box-shadow: 0px 0px 5px 5px #c48e2bde;
 }
-
+.grid-button {
+    display: flex;
+    align-items: flex-end;
+}
 .form-group button {
     border: 0.5rem solid #131212;
     background: none;
@@ -353,6 +356,9 @@ textarea#messsage {
     }
     .text-index {
         padding: 0;
+    }
+    .grid-button{
+        width: 100%;
     }
 }
 @media (max-width: 320px) {
