@@ -66,7 +66,7 @@
                             <label for="first-name">
                                 Primeiro nome
                             </label>
-                            <input type="text" name="name" id="first-name" placeholder="Seu nome" required>
+                            <input type="text" name="$Nome" id="first-name" placeholder="Seu nome" required>
                         </div>
                         <div class="form-group ">
                             <label for="last-name">
@@ -79,44 +79,46 @@
                             <label class="full-width">
                                 Telefone
                             </label>
-                            <input type="tel" name="phone" placeholder="Seu contato" required>
+                            <input type="tel" name="$Telefone" for placeholder="Seu contato" required>
                         </div>
                         <!-- Optional -->
                         <div class="form-group full-width">
-                            <label class="full-width" for="email">
+                            <label class="full-width">
                                 E-mail
                             </label>
-                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                            <input type="email" name="$E-mail" id="email" placeholder="Seu e-mail" required>
                         </div>
                         <div class="form-group full-width">
-                            <label class="full-width" for="tipo_carga">Tipo de carga</label>
-                            <select name="$tipo_carga" id="tipo_carga" required>
+                            <label class="full-width" for="tipo de carga">Tipo de carga</label>
+                            <select name="$Tipo carga" id="tipo_carga" required>
                                 <option value="" selected disabled>Selecione o tipo de carga</option>
-                                <option value="medicamentos">Medicamentos</option>
-                                <option value="correlatos">Correlatos</option>
-                                <option value="perfumaria">Perfumaria</option>
-                                <option value="outros">Outros</option>
+                                <option value="Medicamentos">Medicamentos</option>
+                                <option value="Correlatos">Correlatos</option>
+                                <option value="Perfumaria">Perfumaria</option>
+                                <option value="Outros">Outros</option>
                             </select>
-                        </div> 
+                        </div>
                         <div class="form-group full-width">
                             <label class="full-width" for="volumetria">Volumetria</label>
-                            <input type="number" name="$volumetria" id="volumetria" placeholder="Volumetria (cm³)" required>
+                            <input type="number" name="$Volumetria" id="volumetria" placeholder="Volumetria (cm³)" required>
                         </div>
-                    
+    
                         <div class="form-group full-width">
-                            <label class="full-width" for="peso_real">Peso real (kg)</label>
-                            <input type="number" name="peso_real" id="$peso_real" placeholder="Peso real (kg)" required>
+                            <label class="full-width" for="peso real">Peso real (kg)</label>
+                            <input type="number" name="$Peso_real" id="peso_real" placeholder="Peso real (kg)" required>
                         </div>
-                    
+    
                         <div class="form-group full-width">
-                            <label class="full-width" for="metragem_cubica">Metragem cúbica (m³)</label>
-                            <input type="number" step="0.001" name="$metragem_cubica" id="metragem_cubica" placeholder="Metragem cúbica (m³)" required>
-                        </div>                  
+                            <label class="full-width" for="metragem cubica">Metragem cúbica (m³)</label>
+                            <input type="number" step="0.001" name="$metragem_cubica" id="metragem_cubica"
+                                placeholder="Metragem cúbica (m³)" required>
+                        </div>
                         <div class="form-group full-width">
-                            <label for="message">
+                            <label>
                                 Mensagem
                             </label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                            <textarea name="$Mensagem" id="message" cols="30" rows="10" placeholder="Your message"
+                                required></textarea>
                             <!-- Corrigido o ID para message -->
                         </div>
                         <div class="grid-button">
