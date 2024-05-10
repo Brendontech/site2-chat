@@ -162,9 +162,9 @@ footerTemplate.innerHTML = `
                 <div class="footer-contact">
                     <li class="social-row">
                         <h1>Fale conosco</h1>
-                        <p>Contato: +55 11 98440-4203
+                        <p>Contato: (11) 9 8488-5002
                         </p>
-                        <p>E-mail:  tavares@wayultimamilha.com.br </p>
+                        <p>E-mail: contato@wayultimamilha.com.br </p>
                         <a
                             href="contato.html">Enviar
                             e-mail</a>
