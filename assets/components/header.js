@@ -9,6 +9,9 @@ class Header extends HTMLElement {
 
     headerTemplate.innerHTML = `
       <style>
+      a { 
+        text-decoration: none;
+      }
         .close-menu {
           display: none;
         }
@@ -194,11 +197,13 @@ class Header extends HTMLElement {
                   <div class="container">
                   <div class="center">
                     <button class="btn">
-                      <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                      </svg>
-                      <span>Logística</span>
+                      <a href= "https://www.waysistemalogistico.com.br/">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Logística</span>
+                      </a>
                     </button>
                   </div>
                 </div>
