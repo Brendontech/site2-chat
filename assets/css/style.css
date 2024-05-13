@@ -371,7 +371,9 @@ textarea#messsage {
     .grid-button{
         width: 100%;
     }
-
+    .whatsapp-btn {
+        width: 22vh;
+    }
     /* Localização */
 
     .grid-loc {
