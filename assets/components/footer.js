@@ -136,7 +136,7 @@ footerTemplate.innerHTML = `
 
             <div class="sociais-footer">
                 <div class="footer-icons">
-                    <a href="https://api.whatsapp.com/send?phone=55011984404203">
+                    <a href="https://api.whatsapp.com/send?phone=55011984885002">
                         <img src="assets/img/icon-whatsapp.webp">
                     </a>
                     <a href="">
