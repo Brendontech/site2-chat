@@ -1,0 +1,61 @@
+.formulario {
+    margin-top: 20vh;
+}
+#trabalho-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+.trabalho-form {
+    width: 60%;
+}
+.form-trabalho input:focus,
+.form-trabalho textarea:focus {
+    box-shadow: none;
+}
+
+
+.form-trabalho {
+    width: 60%;
+    border-bottom: solid 2px  black;
+    margin: 0 auto;
+}
+.form-trabalho input,
+.form-trabalho textarea {
+    border: none;
+    margin-left: 5vh;
+    display: flex;
+    padding: 1.5rem 2rem;
+    width: 90%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.8rem;
+    outline: none;
+}
+.Opcao_mei {
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.gid-form-trabalho {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+img.carro-img  {
+    width: 30vh;
+    height: 20vh;
+}
+
+@media (max-width: 800px) {
+    .trabalho-form {
+        width: 100%;
+    }
+    #trabalho-form {
+        padding: 0;
+    }
+    .formulario {
+        margin-top: 10vh;
+    }
+}

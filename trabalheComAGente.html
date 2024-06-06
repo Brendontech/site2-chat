@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre</title>
+    <meta
+      name="description"
+      content="Soluções de Entregas Rápidas e Confiáveis para o Setor de Saúde em São Paulo. Bem-vindo à Way Última Milha, onde a excelência em logística se encontra com a dedicação ao setor de saúde. Localizados estrategicamente em São Paulo"
+    />
+    <meta
+      name="keywords"
+      content="entregas, Eficiência e Agilidade, Tecnologia e Profissionalismo, Way última milha, transportadora, transporte, São Paulo, Entregas Rápidas, Saúde"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="assets/img/Logotipo-Way-Final.png"
+      type="image/x-icon"
+      sizes="52x52"
+    />
+    <link rel="stylesheet" href="assets/css/classes.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/elements.css" />
+    <link rel="stylesheet" href="assets/css/trabalheComAGente.css" />
+    <link rel="stylesheet" href="assets/css/variaveis.css" />
+    <script type="module" src="assets/components/header.js"></script>
+    <script type="module" src="assets/components/footer.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <header-component></header-component>
+      <div class="box-mobile">
+        <a href="index.html">
+            <img class="image_logo2" src="assets/img/Logotipo-Way-Final.png">
+        </a>
+    </div>
+    </header>
+    <main>
+      <div class="formulario">
+        <form
+          id="trabalho-form"
+          action="https://api.staticforms.xyz/submit"
+          method="post"
+        >
+          <div class="trabalho-form">
+            <fieldset class="form-grid">
+
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://wayultimamilha.com.br/"
+              />
+              <input
+                type="hidden"
+                name="accessKey"
+                value="84bb621b-5db3-45c3-95ca-0c4aa116848b"
+              />
+              <input type="text" name="honeypot" style="display: none" />
+              <legend>Trabalhe com a gente</legend>
+              <div class="Opcao_mei">
+                <label class=""> Tem mei ? 
+                    <input type="radio" name="$Tem_Mei" id="Mei_Sim" value="Sim" />
+                    <label for="Mei_Sim">Sim</label>
+                    <input type="radio" name="$Tem_Mei" id="Mei_Nao" value="Não" />
+                    <label for="Mei_Nao">Não</label>
+                </label>
+              </div>
+              <div class="form-trabalho">
+                <label for="cnpj">CNPJ (opcional)</label>
+                <input
+                  type="text"
+                  name="CNPJ"
+                  id="cnpj"
+                  placeholder="Informe o CNPJ"
+                  maxlength="14"
+                />
+            </div>
+            
+              <div class="form-trabalho">
+                <label for="first-name"> Nome completo </label>
+                <input
+                  type="text"
+                  name="$Nome"
+                  id="first-name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+            
+              <div class="form-trabalho">
+                <label class="full-width"> Telefone </label>
+                <input
+                  type="tel"
+                  name="$Telefone"
+                  for
+                  value="()"
+                  required
+                  maxlength="13"
+                />
+              </div>
+
+              <div class="form-trabalho">
+                <label for="Endereço">Endereço</label>
+                <input
+                  type="text"
+                  name="$Endereço"
+                  id="Endereço"
+                  placeholder="Seu endereço"
+                  required
+                />
+             
+              <div class="gid-form-trabalho">
+                <div>
+                    <label for="first-name"> Bairro </label>
+                    <input
+                      type="text"
+                      name="$Bairro"
+                      id="Bairro"
+                      placeholder="Seu Bairro"
+                      required
+                    />
+                </div>
+                <div>
+                    <label for="first-name">Cidade</label>
+                    <input
+                      type="text"
+                      name="$Cidade"
+                      id="first-name"
+                      placeholder="Sua cidade"
+                      required
+                    />
+                </div>
+              </div>
+              <div class="Opcao_carros">
+                <label>Qual o modelo de carro?</label>
+                <div class="opcao">
+                    <label for="fiorino">
+                        <img class="carro-img" src="assets/img/van.png" alt="Fiorino"> Fiorino
+                    </label>
+                    <input type="radio" name="modelo_carro" id="fiorino" value="Fiorino">
+                </div>
+                <div class="opcao">
+                    <label for="van">
+                        <img class="carro-img" src="assets/img/v.png" alt="Van"> Van
+                    </label>
+                    <input type="radio" name="modelo_carro" id="van" value="Van">
+                </div>
+                <div class="opcao">
+                    <label for="tres_quartos_bau">
+                        <img class="carro-img" src="assets/img/Bau 34.jpeg" alt="3/4 Baú"> 3/4 Baú
+                    </label>
+                    <input type="radio" name="modelo_carro" id="tres_quartos_bau" value="3/4 Baú">
+                </div>
+                <div class="opcao">
+                    
+                    <label for="toco_bau">
+                        <img class="carro-img" src="assets/img/toco_bau.jpeg" alt="Toco Baú"> Toco Baú
+                    </label>
+                    <input type="radio" name="modelo_carro" id="toco_bau" value="Toco Baú">
+                </div>
+                <div class="opcao">
+                    
+                    <label for="outros">
+                         Outros
+                    </label>
+                    <input type="text" name="$modelo_carro_outros" id="outros" placeholder="Modelo" >
+                    <div class="form-trabalho full-width">
+                        <label>
+                            Informações complementares
+                        </label>
+                        <textarea name="$Mensagem_complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
+                            required></textarea>
+                        <!-- Corrigido o ID para message -->
+                    </div>
+                </div>
+            </div>
+              <div class="grid-button">
+                <div class="form-group enviar">
+                  <button type="submit">Enviar mensagem</button>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
