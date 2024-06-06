@@ -65,6 +65,11 @@ img.carro-img  {
     }
     .opcao {
         display: flex;
+        gap: 2rem;
+        margin-top: 2vh;
+    }
+    .Opcao_mei { 
+        margin-top: 10vh;
     }
     .trabalho-form {
         width: 100%;
