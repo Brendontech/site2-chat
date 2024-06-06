@@ -44,7 +44,10 @@
         </a>
     </div>
     </header>
+
+    
     <main>
+        
       <div class="formulario">
         <form
           id="trabalho-form"
@@ -66,6 +69,25 @@
               />
               <input type="text" name="honeypot" style="display: none" />
               <legend>Trabalhe com a gente</legend>
+              <div class="Opcao_localidades">
+                <label>Qual a localidade de interesse?</label>
+                <div class="opcao">
+                    <input type="radio" name="localidade" id="sao_paulo" value="São Paulo" required>
+                    <label for="sao_paulo">São Paulo</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="localidade" id="campinas" value="Campinas">
+                    <label for="campinas">Campinas</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="localidade" id="sorocaba" value="Sorocaba">
+                    <label for="sorocaba">Sorocaba</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="localidade" id="litoral" value="Litoral">
+                    <label for="litoral">Litoral</label>
+                </div>
+            </div>
               <div class="Opcao_mei">
                 <label class=""> Tem MEI ? 
                     <input type="radio" name="$Tem_Mei" id="Mei_Sim" value="Sim" />
@@ -173,16 +195,16 @@
                          Outros
                     </label>
                     <input type="text" name="$modelo_carro_outros" id="outros" placeholder="Modelo" >
-                    <div class="form-trabalho full-width">
-                        <label>
-                            Informações complementares
-                        </label>
-                        <textarea name="$Mensagem_complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
-                            required></textarea>
-                        <!-- Corrigido o ID para message -->
                     </div>
+                <div class="form-trabalho full-width">
+                    <label>
+                        Informações complementares
+                    </label>
+                    <textarea name="$Mensagem_complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
+                        required></textarea>
+                    <!-- Corrigido o ID para message -->
                 </div>
-            </div>
+                    </div>
               <div class="grid-button">
                 <div class="form-group enviar">
                   <button type="submit">Enviar mensagem</button>

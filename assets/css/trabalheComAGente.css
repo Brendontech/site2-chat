@@ -47,8 +47,21 @@ img.carro-img  {
     width: 30vh;
     height: 20vh;
 }
-
+.Opcao_localidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 90%;
+    padding-left: 15%;
+}
 @media (max-width: 800px) {
+    .form-trabalho {
+        width: 70%;
+    }
+    .opcao {
+        display: flex;
+    }
     .trabalho-form {
         width: 100%;
     }
@@ -57,5 +70,12 @@ img.carro-img  {
     }
     .formulario {
         margin-top: 10vh;
+    }
+    .Opcao_localidades {
+        display: block;
+    }
+    .form-trabalho input, .form-trabalho textarea { 
+        margin: 0;
+        width: 100%;
     }
 }
