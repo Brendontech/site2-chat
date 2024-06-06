@@ -339,6 +339,9 @@ textarea#messsage {
 }
 
 @media (max-width: 800px) {
+    .main-content {
+        padding: 2rem var(--gap);
+    }
     .intro-content, .grid{
         display: flex;
         flex-direction: column;
