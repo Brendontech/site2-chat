@@ -24,10 +24,9 @@
 .form-trabalho input,
 .form-trabalho textarea {
     border: none;
-    margin-left: 5vh;
     display: flex;
     padding: 1.5rem 2rem;
-    width: 90%;
+    width: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: 1.8rem;
@@ -55,6 +54,11 @@ img.carro-img  {
     width: 90%;
     padding-left: 15%;
 }
+.reset-form {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 800px) {
     .form-trabalho {
         width: 70%;
@@ -78,4 +82,5 @@ img.carro-img  {
         margin: 0;
         width: 100%;
     }
+   
 }

@@ -65,34 +65,34 @@
               <input
                 type="hidden"
                 name="accessKey"
-                value="84bb621b-5db3-45c3-95ca-0c4aa116848b"
+                value="66a9d065-8ce4-4032-bca2-559eb8127b4f"
               />
               <input type="text" name="honeypot" style="display: none" />
               <legend>Trabalhe com a gente</legend>
               <div class="Opcao_localidades">
                 <label>Qual a localidade de interesse?</label>
                 <div class="opcao">
-                    <input type="radio" name="localidade" id="sao_paulo" value="São Paulo" required>
+                    <input type="radio" name="$localidade de interesse" id="sao_paulo" value="São Paulo" required>
                     <label for="sao_paulo">São Paulo</label>
                 </div>
                 <div class="opcao">
-                    <input type="radio" name="localidade" id="campinas" value="Campinas">
+                    <input type="radio" name="$localidade de interesse" id="campinas" value="Campinas">
                     <label for="campinas">Campinas</label>
                 </div>
                 <div class="opcao">
-                    <input type="radio" name="localidade" id="sorocaba" value="Sorocaba">
+                    <input type="radio" name="$localidade de interesse" id="sorocaba" value="Sorocaba">
                     <label for="sorocaba">Sorocaba</label>
                 </div>
                 <div class="opcao">
-                    <input type="radio" name="localidade" id="litoral" value="Litoral">
+                    <input type="radio" name="$localidade de interesse" id="litoral" value="Litoral">
                     <label for="litoral">Litoral</label>
                 </div>
             </div>
               <div class="Opcao_mei">
                 <label class=""> Tem MEI ? 
-                    <input type="radio" name="$Tem_Mei" id="Mei_Sim" value="Sim" />
+                    <input type="radio" name="$MEI" id="Mei_Sim" value="Sim" />
                     <label for="Mei_Sim">Sim</label>
-                    <input type="radio" name="$Tem_Mei" id="Mei_Nao" value="Não" />
+                    <input type="radio" name="$MEI" id="Mei_Nao" value="Não" />
                     <label for="Mei_Nao">Não</label>
                 </label>
               </div>
@@ -100,7 +100,7 @@
                 <label for="cnpj">CNPJ (opcional)</label>
                 <input
                   type="text"
-                  name="CNPJ"
+                  name="$CNPJ"
                   id="cnpj"
                   placeholder="Informe o CNPJ"
                   maxlength="14"
@@ -168,43 +168,43 @@
                     <label for="fiorino">
                         <img class="carro-img" src="assets/img/van.png" alt="Fiorino"> Fiorino
                     </label>
-                    <input type="radio" name="modelo_carro" id="fiorino" value="Fiorino">
+                    <input type="radio" name="$modelo do carro:" id="fiorino" value="Fiorino">
                 </div>
                 <div class="opcao">
                     <label for="van">
                         <img class="carro-img" src="assets/img/v.png" alt="Van"> Van
                     </label>
-                    <input type="radio" name="modelo_carro" id="van" value="Van">
+                    <input type="radio" name="$modelo do carro:" id="van" value="Van">
                 </div>
                 <div class="opcao">
                     <label for="tres_quartos_bau">
                         <img class="carro-img" src="assets/img/Bau 34.jpeg" alt="3/4 Baú"> 3/4 Baú
                     </label>
-                    <input type="radio" name="modelo_carro" id="tres_quartos_bau" value="3/4 Baú">
+                    <input type="radio" name="$modelo do carro:" id="tres_quartos_bau" value="3/4 Baú">
                 </div>
                 <div class="opcao">
                     
                     <label for="toco_bau">
                         <img class="carro-img" src="assets/img/toco_bau.jpeg" alt="Toco Baú"> Toco Baú
                     </label>
-                    <input type="radio" name="modelo_carro" id="toco_bau" value="Toco Baú">
+                    <input type="radio" name="$modelo do carro:" id="toco_bau" value="Toco Baú">
                 </div>
                 <div class="opcao">
                     
                     <label for="outros">
                          Outros
                     </label>
-                    <input type="text" name="$modelo_carro_outros" id="outros" placeholder="Modelo" >
+                    <input type="text" name="$Outros modelos" id="outros" placeholder="Modelo" >
                     </div>
                 <div class="form-trabalho full-width">
                     <label>
-                        Informações complementares
+                        Informações complementares :
                     </label>
-                    <textarea name="$Mensagem_complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
+                    <textarea name="$Mensagem complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
                         required></textarea>
                     <!-- Corrigido o ID para message -->
                 </div>
-                    </div>
+                <input class="reset-form" type="reset" value="Limpar">
               <div class="grid-button">
                 <div class="form-group enviar">
                   <button type="submit">Enviar mensagem</button>
