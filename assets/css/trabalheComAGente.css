@@ -14,7 +14,9 @@
 .form-trabalho textarea:focus {
     box-shadow: none;
 }
-
+fieldset.form-grid {
+    margin-bottom: 2vh;
+}
 
 .form-trabalho {
     width: 60%;
@@ -55,9 +57,24 @@ img.carro-img  {
     padding-left: 15%;
 }
 .reset-form {
+    height: 100%;
     cursor: pointer;
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+.alert-form2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000098;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(8, 253, 61, 0.89);
+    max-width: 400px;
+    z-index: 9999;
 }
 @media (max-width: 800px) {
     .form-trabalho {
