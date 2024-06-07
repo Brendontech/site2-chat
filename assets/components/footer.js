@@ -140,12 +140,9 @@ footerTemplate.innerHTML = `
                         <img src="assets/img/icon-whatsapp.webp">
                     </a>
                     <a href="">
-                        <img src="assets/img/icon-facebook.webp">
-                    </a>
-                    <a href="">
                         <img src="assets/img/icon-linkedin.webp">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/way_ultima_milha/">
                         <img src="assets/img/icon-instagran.webp">
                     </a>
                 </div>

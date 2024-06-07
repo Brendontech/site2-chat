@@ -65,7 +65,7 @@
               <input
                 type="hidden"
                 name="accessKey"
-                value="66a9d065-8ce4-4032-bca2-559eb8127b4f"
+                value="ceba6485-913c-4573-beea-51decf6a42c7"
               />
               <input type="text" name="honeypot" style="display: none" />
               <legend>Trabalhe com a gente</legend>
@@ -90,20 +90,21 @@
             </div>
               <div class="Opcao_mei">
                 <label class=""> Tem MEI ? 
-                    <input type="radio" name="$MEI" id="Mei_Sim" value="Sim" />
+                    <input type="radio" name="$MEI" id="Mei_Sim" value="Sim" required />
                     <label for="Mei_Sim">Sim</label>
                     <input type="radio" name="$MEI" id="Mei_Nao" value="Não" />
                     <label for="Mei_Nao">Não</label>
                 </label>
               </div>
               <div class="form-trabalho">
-                <label for="cnpj">CNPJ (opcional)</label>
+                <label for="cnpj">CNPJ ou CPF </label>
                 <input
                   type="text"
-                  name="$CNPJ"
+                  name="$CNPJ ou CPF"
                   id="cnpj"
                   placeholder="Informe o CNPJ"
                   maxlength="14"
+                  required
                 />
             </div>
             
@@ -124,9 +125,9 @@
                   type="tel"
                   name="$Telefone"
                   for
-                  value="()"
-                  required
+                  placeholder="Seu numero"
                   maxlength="13"
+                  required
                 />
               </div>
 
@@ -168,7 +169,7 @@
                     <label for="fiorino">
                         <img class="carro-img" src="assets/img/van.png" alt="Fiorino"> Fiorino
                     </label>
-                    <input type="radio" name="$modelo do carro:" id="fiorino" value="Fiorino">
+                    <input type="radio" name="$modelo do carro:" id="fiorino" value="Fiorino" required>
                 </div>
                 <div class="opcao">
                     <label for="van">
@@ -201,19 +202,22 @@
                         Informações complementares :
                     </label>
                     <textarea name="$Mensagem complementar" id="message" cols="30" rows="10" placeholder="Sua mensagem"
-                        required></textarea>
+                      ></textarea>
                     <!-- Corrigido o ID para message -->
                 </div>
-                <input class="reset-form" type="reset" value="Limpar">
+                
               <div class="grid-button">
                 <div class="form-group enviar">
-                  <button type="submit">Enviar mensagem</button>
+                  <button type="submit">Enviar cadastro</button>
                 </div>
+                <input class="reset-form" type="reset" value="Limpar">
               </div>
             </fieldset>
           </div>
         </form>
       </div>
     </main>
+    <footer-component></footer-component>
+    <a class="back-to-top" href="#">➤</a>
   </body>
 </html>
