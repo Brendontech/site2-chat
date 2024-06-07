@@ -78,9 +78,14 @@ class Header extends HTMLElement {
         }
         @media (hover: none) {
           a {
-              -webkit-tap-highlight-color: transparent; /* Define a cor de destaque ao tocar como transparente */
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            -webkit-tap-highlight-color: transparent;
+            align-items: center;
           }
         }
+    
 
         // botão
         @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
@@ -198,7 +203,7 @@ class Header extends HTMLElement {
                   <div class="center">
                     <button class="btn">
                       <a href= "https://www.waysistemalogistico.com.br/">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <svg width="180px" height="20px" viewBox="0 0 180 60" class="border">
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                         </svg>
